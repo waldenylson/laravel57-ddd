@@ -1,9 +1,11 @@
 <?php
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/login', function(){
+    return "login route...";
 });
 
 Route::get('/', function () {
     return view('home');
-});
+})->middleware('auth');
+

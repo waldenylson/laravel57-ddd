@@ -49,8 +49,8 @@ class HttpKernel extends Kernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \App\Units\Core\Middleware\Authenticate::class,
-        'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'views' => \App\Units\Core\Middleware\Authenticate::class,
+        'views.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
